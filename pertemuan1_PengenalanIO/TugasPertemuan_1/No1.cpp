@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     system("cls");
-    string Nama,NIM,Kom;
+    string Nama, NIM, Kom;
     float IPK;
 
     cout<< "Nama: ";
@@ -24,6 +24,6 @@ int main()
     cout<< "NIM anda "<<NIM<<" dari Kom "<< Kom << endl;
     cout<< fixed;
     cout<< setprecision(2);
-    cout<< "IPK anda adalah " << IPK ;
+    cout<< "IPK anda " << IPK ;
     return 0;
 }
