@@ -29,10 +29,10 @@ int main()
     cout << hasil;*/
 
     //modulo
-    /*int bilangan2 = 5;
+    int bilangan2 = 5;
     int bilangan3 = 10;
     int hasil = bilangan2 % bilangan3;
-    cout<<hasil;*/
+    cout<<hasil;
 
    int angka = 5;
     angka+=10;
