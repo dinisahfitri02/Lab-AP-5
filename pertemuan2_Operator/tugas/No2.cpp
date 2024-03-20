@@ -5,7 +5,7 @@ int main()
 {
     system("cls");
     int a,b,c;
-    cout << "Menghitung nilai akar-akar dari ax^2 + bx + c " << endl;
+    cout << "Menghitung nilai akar-akar dari persamaan kuadrat ax^2 + bx + c " << endl;
     cout << "Nilai a = ";
     cin >> a;
     cout << "Nilai b = ";

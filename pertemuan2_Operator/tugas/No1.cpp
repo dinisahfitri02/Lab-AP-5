@@ -10,7 +10,6 @@ using namespace std;
 int main ()
 {
     system("CLS");
-
     // soal a
     bool hasil1 = 3 - 1 < I || K - 5 < 8 + 2 && L + 7 >= 9 + 3;
     cout << "A. 3 - 1 < I || K - 5 < 8 + 2 && L + 7 >= 9 + 3 = "<< hasil1 << endl;
