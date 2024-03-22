@@ -17,5 +17,3 @@ e=(c<=b) ||!(a!=b);
 
 cout<<"Hasil adalah "<<d<<endl; 
 cout<<"Hasil adalah "<<e<<endl; 
-system ("pause");
-}
