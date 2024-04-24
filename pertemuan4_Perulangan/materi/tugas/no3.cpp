@@ -1,37 +1,54 @@
 #include <iostream>
-#include <cctype> //memanggil function tolower
 using namespace std;
 
 int main() {
   system("CLS");
-  
-  int counter = 0;
-  string kalimat, lowerCaseKalimat;
-  char huruf;
 
-  cout << "Masukkan kalimat :";
-  getline(cin, kalimat);
-  cout << "Masukkan huruf yang ingin dihapus dari kalimat :";
-  cin >> huruf;
-  
-  //blok kode untuk me-lower-case inputan user
-  for (char c : kalimat){
-    lowerCaseKalimat += tolower(c);
+  int tahun,interval;
+
+  x :
+    cout << "Input tahun (1000-9000) : ";
+    cin >> tahun;
+
+  y : 
+    cout << "Input interval : ";
+    cin >> interval;
+
+  while (tahun<1000 || tahun>9000){
+    cout << "Input tahun yang sesuai " << endl;
+    goto x;
   }
-  huruf = tolower(huruf); 
 
-  //blok kode untuk menghapus karakter dari kalimat dan untuk menghidung jumlah karakter yang terhapus 
-  for (int i = 0; i < lowerCaseKalimat.length(); i++){
-    if (lowerCaseKalimat[i] == huruf){
-      lowerCaseKalimat.erase(i, 1);
-      i--; /*i-- digunakan untuk mundur 1 index ke belakang untuk memastikan bahwa 
-      karakter yang berdampingan terhapus, misal AAA/UUU/DD/99 dsb.*/
-      counter++;
+  while (interval<-1000 || interval>9999-tahun){
+    cout << "Input interval yang sesuai " << endl;
+    goto y;
+  }
+
+  if (interval < 0){
+    for (int i=0;i>interval;i--){
+    cout << tahun ;
+    if (tahun % 4 == 0){
+      cout << " Kabisat" << endl;
+    }
+    else {
+      cout << " Bukan kabisat" << endl;
+    }
+    tahun -=1;
     }
   }
+  else {
+  for (int i=0;i<interval;i++){
+    cout << tahun ;
+    if (tahun % 4 == 0){
+      cout << " Kabisat" << endl;
+    }
+    else {
+      cout << " Bukan kabisat" << endl;
+    }
+    tahun +=1;
+  }
 
-  //blok kode untuk menampilkan output
-  cout << lowerCaseKalimat << endl;
-  cout << "Karakter terhapus : " << counter;
+  }
+  
   return 0;
 }
