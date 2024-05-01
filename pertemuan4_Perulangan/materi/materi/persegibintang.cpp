@@ -2,21 +2,19 @@
 using namespace std;
 
 int main() {
-    system("CLS");
-    
-    int p,l;
+  system("CLS");
+  
+  int sisi;
 
-    cout << "input panjang";
-    cin >> p;
-    cout << "input lebar";
-    cin >> l;
+  cout << "Input sisi persegi: ";
+  cin >> sisi;
 
-    for (int i=0;i<l;i++){
-        for (int j=0;i<p;j++){
-            cout << "*";
-        }
+  for (int i = 0; i < sisi; i++) {
+    for (int j = 0; j < sisi; j++) {
+      cout << "* ";
     }
-    
-    
-    return 0;
+    cout << endl;
+  }
+  
+  return 0;
 }

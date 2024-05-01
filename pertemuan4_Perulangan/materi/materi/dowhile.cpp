@@ -2,22 +2,14 @@
 using namespace std;
 
 int main() {
-    system("CLS");
-    
-    int i,j,k,n;
+  system("CLS");
+  
+  int x = 10;
 
-    cout << "Tinggi : ";
-    cin >> n;
+  do {
+    cout << "Hello World ";
+  } while (x > 10);
+  
 
-    for (i=n;i>0;i--){
-        for (j=i-1;j>0;j--){
-            cout << " ";
-        }
-        for (k=i;k>=j;k--){
-            cout << "*";
-        }
-        cout << endl;
-    }
-
-    return 0;
+ return 0;
 }

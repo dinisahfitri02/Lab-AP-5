@@ -13,7 +13,7 @@ int main() {
       cout << " ";
     }
     for (int k = 0; k <= i; k++) {
-      cout << "* ";
+      cout << i+1 << " ";
     }
     cout << endl;
   }

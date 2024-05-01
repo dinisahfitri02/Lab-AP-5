@@ -1,20 +1,21 @@
+
 #include <iostream>
 using namespace std;
 
 int main() {
-    system("CLS");
-    
-    string nama;
+  system("CLS");
+  
+  string nama;
 
-    cout << "nama anda : ";
-    cin << nama;
-
-    for (char c : nama){
-        if (c=="a" || c=="i" || c=="e" || c=="o") {
-            c="o";
-        }
-        cout << c;
+  cout << "Input nama anda: ";
+  cin >> nama;
+  
+  for (auto c : nama) {
+    c = tolower(c);
+    if (c == 'a' || c == 'i' || c == 'u' || c == 'e') {
+      c = 'o';
     }
-    
-    return 0;
+    cout << c; 
+  }
+  return 0;
 }
